@@ -3,7 +3,7 @@ function askForLetter() {
 }
 
 function doesUserNameContainLetter(user) {
-	return user.name.indexOf(letter) > -1;
+	return user.name.toUpperCase().indexOf(letter.toUpperCase()) > -1;
 }
 function getUserName(user) {
 	return user.name;
