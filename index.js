@@ -1,9 +1,9 @@
-function askForStartingLetter() {
-	return prompt("Choose a starting letter: ");
+function askForLetter() {
+	return prompt("Type a letter: ");
 }
 
 function doesUserNameContainLetter(user) {
-	return user.name.indexOf(startingLetter) > -1;
+	return user.name.indexOf(letter) > -1;
 }
 function getUserName(user) {
 	return user.name;
@@ -36,7 +36,7 @@ function showUserProperties(property) {
 	}
 }
 
-const startingLetter = askForStartingLetter();
+const letter = askForLetter();
 const selectedUsers = window.users.filter(doesUserNameContainLetter);
 const selectedUserNames = selectedUsers.map(getUserName);
 
